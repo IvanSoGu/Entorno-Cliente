@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> 07 Bucles Unarios </title>
+
+    </head>
+
+    <body>
+
+        <output type="text"></output>
+
+        <script lang="javascript">
+
+            var numero = prompt("Introduce un numero");
+            var datos = "";
+
+            externo:
+            for(var i = 2; i<=numero;i++){
+
+                interno:
+                for(var j=2; j<i;j++){
+
+                    if(i%j==0){
+
+                        continue externo;
+
+                    }
+
+                }
+
+                datos=datos + i + " ";
+
+            }
+
+            
+
+            document.getElementsByTagName("output")[0].value=datos;
+
+        </script>
+        
+    </body>
+
+</html>
